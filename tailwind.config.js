@@ -6,7 +6,11 @@ module.exports = {
     "./src/app.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      height: {
+        '85': '85vh',
+      }
+    },
   },
   plugins: [],
 }

@@ -1,12 +1,16 @@
 <script setup>
 import navbar from './components/navbar.vue'
 import HeaderComp from './components/HeaderComp.vue';
+import features from './components/features.vue';
+import about from './components/about.vue';
 </script>
 
 <template>
-  <div>
+  <div class="relative">
     <navbar />
     <HeaderComp />
+    <features />
+    <about />
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="px-6 py-6 lg:px-8">
+    <div class="px-6 py-6 lg:px-8 sticky top-0">
     <div>
       <nav class="flex h-9 items-center justify-between text-red-600" aria-label="Global">
         <div class="flex lg:min-w-0 lg:flex-1" aria-label="Global">
