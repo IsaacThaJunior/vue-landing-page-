@@ -68,7 +68,7 @@
   position: relative;
 }
 .composition__photo {
-  width: 30%;
+  width: 55%;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
   position: absolute;
   z-index: 10;
