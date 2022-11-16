@@ -1,7 +1,7 @@
 <template>
   <div class="flex justify-center">
     <section class="py-12">
-      <div class="text-center mb-24">
+      <div class="text-center mb-28">
         <h2 class="heading-secondary text-5xl uppercase">
           Explore the world with us!
         </h2>
@@ -9,28 +9,32 @@
 
       <div class="flex">
         <div class="w-1/2">
-          <h3 class="heading-tertiary mb-6">
+          <h3 class="heading-tertiary mb-4 text-slate-600">
             Youre going to fall in love with nature
           </h3>
-          <p class="text-md">
+          <p class="text-md mb-8">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor
             nulla beatae ipsum sed veniam magni fugit incidunt ducimus,
             aspernatur quasi nesciunt. Laudantium inventore reprehenderit
             cumque. Dicta quo quisquam esse voluptatum.
           </p>
 
-          <h3 class="heading-tertiary mb-6">
+          <h3 class="heading-tertiary mb-4 text-slate-600">
             Live adventures like you never have before
           </h3>
-          <p class="text-md">
+          <p class="text-md mb-8">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem
             delectus eligendi eos? Natus, velit dolor obcaecati eligendi cumque
             iste consequatur qui deserunt error tempore.
           </p>
 
-          <a href="#" class="btn-text">Learn more &rarr;</a>
+          <a
+            href="#"
+            class="btn-text text-lg inline-block text-green-400 no-underline border-b border-green-400 p-2 transition-all hover:bg-green-500 hover:text-white hover:shadow-lg hover:-translate-y-2 active:shadow-md active:translate-y-0"
+            >Learn more &rarr;</a
+          >
         </div>
-        <div class="w-1/2">
+        <div class="w-1/2 pl-12">
           <div class="composition">
             <!-- <img
               src="../assets/gadget3.jpeg"
@@ -68,12 +72,12 @@
   position: relative;
 }
 .composition__photo {
-  width: 55%;
+  width: 50%;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
   position: absolute;
   z-index: 10;
   transition: all 0.2s;
-  outline-offset: 2rem;
+  outline-offset: 1rem;
 }
 
 @media screen and (max-width: 56.25em) {
@@ -184,28 +188,5 @@
 
 .u-center-text {
   text-align: center !important;
-}
-
-.btn-text:link,
-.btn-text:visited {
-  font-size: 1.6rem;
-  color: #55c57a;
-  display: inline-block;
-  text-decoration: none;
-  border-bottom: 1px solid #55c57a;
-  padding: 3px;
-  transition: all 0.2s;
-}
-
-.btn-text:hover {
-  background-color: #55c57a;
-  color: #fff;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px);
-}
-
-.btn-text:active {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  transform: translateY(0);
 }
 </style>
