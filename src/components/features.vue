@@ -4,7 +4,7 @@
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="sm:text-center">
           <p
-            class="heading-secondary mt-2 text-4xl font-bold tracking-tighter uppercase text-white sm:text-4xl"
+            class="heading-secondary font-bold inline-block text-3xl md:text-5xl uppercase transition-all"
           >
             A better way to send money
           </p>

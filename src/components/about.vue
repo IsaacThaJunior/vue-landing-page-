@@ -1,28 +1,28 @@
 <template>
-  <div class="flex justify-center">
-    <section class="py-12">
-      <div class="text-center mb-28">
-        <h2 class="heading-secondary text-5xl uppercase">
+  <div class="flex justify-center bg-white/90 pb-16">
+    <section class="pb-24 px-4 md:px-12 pt-20">
+      <div class="text-center mb-14 md:mb-28">
+        <h2 class="heading-secondary font-bold inline-block text-4xl md:text-5xl uppercase transition-all">
           Explore the world with us!
         </h2>
       </div>
 
-      <div class="flex">
-        <div class="w-1/2">
-          <h3 class="heading-tertiary mb-4 text-slate-600">
+      <div class="flex flex-col md:flex-row">
+        <div class="w-full md:w-1/2 mb-12">
+          <h3 class="text-2xl md:text-3xl font-bold uppercase mb-4 text-slate-600">
             Youre going to fall in love with nature
           </h3>
-          <p class="text-md mb-8">
+          <p class="text-lg mb-8 text-emerald-700">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor
             nulla beatae ipsum sed veniam magni fugit incidunt ducimus,
             aspernatur quasi nesciunt. Laudantium inventore reprehenderit
             cumque. Dicta quo quisquam esse voluptatum.
           </p>
 
-          <h3 class="heading-tertiary mb-4 text-slate-600">
+          <h3 class="text-2xl md:text-3xl font-bold uppercase mb-4 text-slate-600">
             Live adventures like you never have before
           </h3>
-          <p class="text-md mb-8">
+          <p class="text-lg mb-8 text-emerald-700">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem
             delectus eligendi eos? Natus, velit dolor obcaecati eligendi cumque
             iste consequatur qui deserunt error tempore.
@@ -30,35 +30,28 @@
 
           <a
             href="#"
-            class="btn-text text-lg inline-block text-green-400 no-underline border-b border-green-400 p-2 transition-all hover:bg-green-500 hover:text-white hover:shadow-lg hover:-translate-y-2 active:shadow-md active:translate-y-0"
+            class="btn-text text-lg inline-block text-gray-700 no-underline border-b border-gray-700 p-2 transition-all hover:bg-green-500 hover:text-gray-800 hover:shadow-lg hover:-translate-y-2 active:shadow-md active:translate-y-0"
             >Learn more &rarr;</a
           >
         </div>
-        <div class="w-1/2 pl-12">
-          <div class="composition">
-            <!-- <img
-              src="../assets/gadget3.jpeg"
-              alt="Photo 1"
-              class="composition__photo composition__photo--p1"
-            /> -->
+        <div class="md:w-1/2 md:pl-12">
+          <div class="relative flex">
             <img
-              srcset="../assets/gadget3.jpeg 300w, ../assets/gadget3.jpeg 1000w"
-              sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+              src="../assets/vicor1.jpg"
               alt="Photo 1"
-              class="composition__photo composition__photo--p1"
-              src="../assets/gadget3.jpeg"
+              class="w-5/12 shadow-lg absolute z-10 transition-all duration-300 outline-offset-8  hover:scale-110  hover:-translate-y-2 hover:shadow-md hover:z-20 left-0 md:left-12 md:-top-8"
             />
 
             <img
-              src="../assets/coding.jpeg"
+              src="../assets/victor2.jpg"
               alt="Photo 2"
-              class="composition__photo composition__photo--p2"
+              class="w-5/12 shadow-lg absolute md:z-10 transition-all duration-300 outline-offset-8  hover:scale-110  hover:-translate-y-2 hover:shadow-md hover:z-20 md:right-28 md:top-0 left-1/4 z-30"
             />
 
             <img
-              src="../assets/gadget4.jpeg"
+              src="../assets/victor3.jpg"
               alt="Photo 3"
-              class="composition__photo composition__photo--p3"
+              class="w-5/12 shadow-lg absolute z-10 transition-all duration-300 outline-offset-8  hover:scale-110  hover:-translate-y-2 hover:shadow-md hover:z-20 md:left-1/4 md:top-20 right-0"
             />
           </div>
         </div>
@@ -68,17 +61,6 @@
 </template>
 
 <style scoped>
-.composition {
-  position: relative;
-}
-.composition__photo {
-  width: 50%;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-  position: absolute;
-  z-index: 10;
-  transition: all 0.2s;
-  outline-offset: 1rem;
-}
 
 @media screen and (max-width: 56.25em) {
   .composition__photo {
@@ -104,10 +86,6 @@
     left: 0;
     transform: scale(1.1);
   }
-
-  .heading-secondary {
-    font-size: 3rem;
-  }
 }
 
 @media screen and (max-width: 37.5em) {
@@ -118,75 +96,12 @@
     float: left;
   }
 
-  .heading-secondary {
-    font-size: 2.5rem;
-  }
-}
-
-.composition__photo--p1 {
-  left: 0;
-  top: -2rem;
-}
-
-.composition__photo--p2 {
-  right: 0;
-  top: 2rem;
-}
-
-.composition__photo--p3 {
-  left: 20%;
-  top: 10rem;
-}
-
-.composition__photo:hover {
-  outline: 1.5rem solid greenyellow;
-  transform: scale(1.05) translateY(-0.5rem);
-  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
-  z-index: 20;
-}
-
-.composition__photo:hover .composition__photo__photo:not(:hover) {
-  transform: scale(0.95);
 }
 
 .heading-secondary {
-  font-weight: 700;
-  display: inline-block;
   background-image: linear-gradient(to right, #7ed56f, #28b485);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  letter-spacing: 0.2rem;
-  transition: all 0.2s;
-}
-.heading-secondary:hover {
-  transform: skewY(2deg) skewX(15deg) scale(1.1);
-  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
-}
-
-.row {
-  max-width: 114rem;
-  margin: 0 auto;
-}
-
-.col-1-of-2 {
-  width: calc(100% - (114rem / 2));
-}
-
-.heading-tertiary {
-  font-size: 1.6rem;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.u-margin-bottom-small {
-  margin-bottom: 1.5rem !important;
-}
-.u-margin-bottom-big {
-  margin-bottom: 4rem !important;
-}
-
-.u-center-text {
-  text-align: center !important;
 }
 </style>

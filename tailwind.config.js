@@ -9,6 +9,9 @@ module.exports = {
     extend: {
       height: {
         '85': '85vh',
+      },
+      borderRadius: {
+        'circle': '50%',
       }
     },
   },
