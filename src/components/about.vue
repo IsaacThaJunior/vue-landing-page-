@@ -1,29 +1,40 @@
 <template>
-  <div>
-    <section class="section-about">
-      <div class="u-center-text u-margin-bottom-big">
-        <h2 class="heading-secondary">Exciting tours for adventurous people</h2>
+  <div class="flex justify-center">
+    <section class="py-12">
+      <div class="text-center mb-28">
+        <h2 class="heading-secondary text-5xl uppercase">
+          Explore the world with us!
+        </h2>
       </div>
 
       <div class="flex">
-        <div class="col-1-of-2">
-          <h3 class="heading-tertiary u-margin-bottom-small">Youre going to fall in love with nature</h3>
-          <p class="paragraph">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor nulla beatae ipsum sed veniam magni fugit
-            incidunt ducimus, aspernatur quasi nesciunt.
-            Laudantium inventore reprehenderit cumque. Dicta quo quisquam esse voluptatum.
+        <div class="w-1/2">
+          <h3 class="heading-tertiary mb-4 text-slate-600">
+            Youre going to fall in love with nature
+          </h3>
+          <p class="text-md mb-8">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor
+            nulla beatae ipsum sed veniam magni fugit incidunt ducimus,
+            aspernatur quasi nesciunt. Laudantium inventore reprehenderit
+            cumque. Dicta quo quisquam esse voluptatum.
           </p>
 
-          <h3 class="heading-tertiary u-margin-bottom-small">Live adventures like you never have before</h3>
-          <p class="paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem delectus eligendi eos? Natus, velit dolor
-            obcaecati eligendi cumque iste consequatur
-            qui deserunt error tempore.
+          <h3 class="heading-tertiary mb-4 text-slate-600">
+            Live adventures like you never have before
+          </h3>
+          <p class="text-md mb-8">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem
+            delectus eligendi eos? Natus, velit dolor obcaecati eligendi cumque
+            iste consequatur qui deserunt error tempore.
           </p>
 
-          <a href="#" class="btn-text">Learn more &rarr;</a>
+          <a
+            href="#"
+            class="btn-text text-lg inline-block text-green-400 no-underline border-b border-green-400 p-2 transition-all hover:bg-green-500 hover:text-white hover:shadow-lg hover:-translate-y-2 active:shadow-md active:translate-y-0"
+            >Learn more &rarr;</a
+          >
         </div>
-        <div class="col-1-of-2">
+        <div class="w-1/2 pl-12">
           <div class="composition">
             <img src="../assets/gadget3.jpeg" alt="Photo 1" class="composition__photo composition__photo--p1">
 
@@ -41,14 +52,13 @@
 .composition {
   position: relative;
 }
-
 .composition__photo {
-  width: 55%;
+  width: 50%;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
   position: absolute;
   z-index: 10;
   transition: all 0.2s;
-  outline-offset: 2rem;
+  outline-offset: 1rem;
 }
 
 @media screen and (max-width: 56.25em) {
@@ -94,12 +104,9 @@
   }
 }
 
-
-
 .composition__photo--p1 {
   left: 0;
   top: -2rem;
-
 }
 
 .composition__photo--p2 {
@@ -123,28 +130,44 @@
   transform: scale(0.95);
 }
 
-
 .heading-secondary {
-  font-size: 3.5rem;
-  text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right,
-      greenyellow,
-      darkgreen);
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   letter-spacing: 0.2rem;
   transition: all 0.2s;
 }
-
 .heading-secondary:hover {
   transform: skewY(2deg) skewX(15deg) scale(1.1);
   text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+
 .col-1-of-2 {
-  width: calc(100% - 1124rem / 2);
+  width: calc(100% - (114rem / 2));
+}
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important;
+}
+.u-margin-bottom-big {
+  margin-bottom: 4rem !important;
+}
+
+.u-center-text {
+  text-align: center !important;
 }
 </style>
