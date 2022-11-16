@@ -9,7 +9,7 @@
 
       <div class="flex flex-col md:flex-row">
         <div class="w-full md:w-1/2 mb-12">
-          <h3 class="text-2xl md:text-3xl font-bold uppercase mb-4 text-slate-600">
+          <h3 class="text-2xl md:text-2xl font-bold uppercase mb-4 text-slate-600">
             Youre going to fall in love with nature
           </h3>
           <p class="text-lg mb-8 text-emerald-700">
@@ -19,7 +19,7 @@
             cumque. Dicta quo quisquam esse voluptatum.
           </p>
 
-          <h3 class="text-2xl md:text-3xl font-bold uppercase mb-4 text-slate-600">
+          <h3 class="text-2xl md:text-2xl font-bold uppercase mb-4 text-slate-600">
             Live adventures like you never have before
           </h3>
           <p class="text-lg mb-8 text-emerald-700">
